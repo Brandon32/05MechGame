@@ -7,7 +7,7 @@ import engine.events.GameEvent.GameEventType;
 import engine.events.GameEventDispatcher;
 import game.Level;
 import game.sprite.AIMech;
-import game.sprite.Mech;
+import game.sprite.PlayerMech;
 
 import java.awt.Dimension;
 import java.awt.Graphics2D;
@@ -15,7 +15,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 public class Level01 extends Level {
-	private Mech myMech;
+	private PlayerMech myMech;
 	private BufferedImage backgroundImage;
 	private Dimension displayBounds;
 	private AIMech evilMech;
@@ -23,7 +23,7 @@ public class Level01 extends Level {
 	public Level01() {
 		super();
 		displayBounds = GameDisplay.getBounds();
-		myMech = new Mech();
+		myMech = new PlayerMech();
 		evilMech = new AIMech();
 
 		try {

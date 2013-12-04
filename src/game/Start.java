@@ -61,7 +61,7 @@ public class Start implements Game, GameEventMouse, GameEventKeyboard {
 		while (gameState != GameState.ENDING) {
 			gameState = GameState.STARTING;
 			if (args.length > 0)
-				if (args[0] == "debug")
+				if (args[0].equals("debug"))
 					game = new Start(true);
 				else
 					game = new Start(false);

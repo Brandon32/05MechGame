@@ -22,6 +22,11 @@ public interface ImageInterface extends Comparable<ImageInterface> {
 
 	public abstract void draw(Graphics2D g);
 
+    /**
+     * Layer sort method
+     *
+     * @param image
+     */
 	public abstract int compareTo(ImageInterface image);
 
 	public abstract int getLayer();

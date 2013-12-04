@@ -92,7 +92,7 @@ public class SettingsSprite implements UIInterface {
 	@Override
 	public void update() {
 		// move the selected value to the next one
-		if (down == true) {
+		if (down) {
 			if (selected < MAX_SELECTIONS) {
 				selected++;
 			} else {
@@ -100,7 +100,7 @@ public class SettingsSprite implements UIInterface {
 			}
 			down = false;
 		}
-		if (up == true) {
+		if (up) {
 			if (selected > 0) {
 				selected--;
 			} else {
@@ -169,7 +169,7 @@ public class SettingsSprite implements UIInterface {
 
 	@Override
 	public int compareTo(ImageInterface compareImage) {
-		return this.getLayer() - ((ImageInterface) compareImage).getLayer();
+		return this.getLayer() - (compareImage).getLayer();
 	}
 
 	@Override

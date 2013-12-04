@@ -17,7 +17,7 @@ public class DebugInfo {
 	private static Dimension displayBounds;
 
 	static {
-		f1 = new Font("Times New Roman", Font.PLAIN, (int) 12);
+		f1 = new Font("Times New Roman", Font.PLAIN, 12);
 		shortMsg = new LinkedList<String>();
 		longMsg = new LinkedList<String>();
 		displayBounds = GameDisplay.getBounds();
@@ -41,7 +41,7 @@ public class DebugInfo {
 	}
 
 	public static void debugShort(String st) {
-		if (debug == true) {
+		if (debug) {
 			for (String s : st.split("\n")) {
 				shortMsg.addLast(s);
 			}
@@ -49,7 +49,7 @@ public class DebugInfo {
 	}
 
 	public static void debugLong(String st) {
-		if (debug == true) {
+		if (debug) {
 			for (String s : st.split("\n")) {
 				longMsg.addLast(s);
 			}
@@ -57,7 +57,7 @@ public class DebugInfo {
 	}
 
 	public static void debugLog(String st) {
-		if (debug == true) {
+		if (debug) {
 			System.out.println(st);
 		}
 	}

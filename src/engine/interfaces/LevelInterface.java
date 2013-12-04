@@ -26,22 +26,16 @@ public interface LevelInterface {
 
 	/**
 	 * Determine if the passed Sprite object collided with this object.
-	 * 
-	 * @param obj
 	 */
 	public abstract void checkCollision();
 
 	/**
 	 * Receive a keyboard event.
-	 * 
-	 * @param ke
 	 */
 	public abstract void keyboardEvent();
 
 	/**
 	 * Receive a mouse event.
-	 * 
-	 * @param me
 	 */
 	public abstract void mouseEvent();
 
